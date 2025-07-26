@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // gussis game in using math.random method
+
+        let maximum = prompt("Enter the maximum number :")
+
+        let usernumber = prompt("Enter the number :");
+
+        let num = Math.floor(Math.random() * maximum) + 1;
+
+        while (true) {
+            if (usernumber == "quit") {
+                console.log("You quit");
+                break;
+            }
+
+            if (usernumber == num) {
+                console.log("Your guss is right!");
+                break;
+            } else if (usernumber < num) {
+                usernumber = prompt("You guss was small number. plaes try again");
+            } else {
+                usernumber = prompt("you guss was large number. plaes try again")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

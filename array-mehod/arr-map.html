@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // map using number squre
+        let number = [1, 2, 3, 4, 5];
+
+        let squre = number.map(num => num * num);
+
+        console.log(squre);
+
+        // object with map method
+
+        let student = [
+            {
+                name : "hardik",
+                age : 22,
+                marks : 95,
+            },
+            {
+                name : "nikul",
+                age : 23,
+                marks : 90,
+            },
+            {
+                name : "shubham",
+                age : 21,
+                marks : 85,
+            },
+        ]
+
+        let cgpa = student.map((el) =>{
+            return el.marks / 10;
+        })
+
+        console.log(cgpa);
+    </script>
+</body>
+</html>

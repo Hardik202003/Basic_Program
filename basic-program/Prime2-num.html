@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Prime Checker</title>
+</head>
+<body>
+  <script>
+    function isPrimeSimple(num) {
+      if (num < 2) {
+        return false;
+    }
+      if (num === 2) {
+        return true;
+    }
+      if (num % 2 === 0) {
+        return false;
+    }
+      for (let i = 3; i * i <= num; i += 2) {
+        if (num % i === 0) {
+          return false;
+        }
+   }
+      return true;
+}
+
+    function findPrimesBetweenSimple() {
+      const firstNumStr = prompt("Enter the first number:");
+      const secondNumStr = prompt("Enter the second number:");
+
+      if (firstNumStr === null || secondNumStr === null) {
+        console.log("Input cancelled.");
+        return;
+      }
+
+      const firstNum = parseInt(firstNumStr);
+      const secondNum = parseInt(secondNumStr);
+
+      if (isNaN(firstNum) || isNaN(secondNum)) {
+        console.log("Invalid input. Please enter valid integer numbers.");
+        return;
+      }
+
+      if (firstNum > secondNum) {
+        console.log("Error: The first number should be less than or equal to the second number.");
+        return;
+      }
+
+      const primeNumbers = [];
+      for (let i = firstNum; i <= secondNum; i++) {
+        if (isPrimeSimple(i)) {
+          primeNumbers.push(i);
+        }
+      }
+
+      if (primeNumbers.length > 0) {
+        console.log(`Prime numbers between ${firstNum} and ${secondNum} are: ${primeNumbers}`);
+      } else {
+        console.log(`There are no prime numbers between ${firstNum} and ${secondNum}.`);
+      }
+    }
+
+    findPrimesBetweenSimple();
+  </script>
+</body>
+</html>

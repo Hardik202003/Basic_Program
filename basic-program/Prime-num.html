@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+// THIS ARE BASIC CODE FOR FIND PRIME NUMBER
+
+ /*     function isPrime(number) {
+  if (number <= 1) {
+    return false;
+  }
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+}
+  return true;
+}
+
+ let num = 11;
+if (isPrime(num)) {
+  console.log("is prime");
+} else {
+  console.log("is not prime");
+}
+  */
+
+
+
+// USER INPUT THROUGH THE PRINT PRIME NUMBER
+userInput = prompt("Enter a number to check if it's prime:");
+
+function isPrime(number) {
+ if (number <= 1) {
+    return false;
+  }
+  for (let i = 2; i < number; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+}
+  return true;
+}
+ let num = parseInt(userInput);
+if (isPrime(num)) {
+  console.log("is prime");
+} else {
+  console.log("is not prime");
+}
+
+    </script>
+    
+</body>
+</html>

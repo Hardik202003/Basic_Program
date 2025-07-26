@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Find the Maximum Number in an Array : let numbers = [12, 45, 78, 4, 89, 32]
+
+        let numbers = [12, 45, 78, 4, 89, 32];
+
+        // let Maximum = Math.max(...numbers);
+        // console.log(Maximum);
+
+        let Maximum = [];
+
+        for (let i = 1; i < numbers.length; i++) {
+        
+            if (numbers[i] > Maximum) {
+                Maximum = numbers[i];
+            }
+        }
+       console.log(Maximum);
+
+    </script>
+</body>
+
+</html>

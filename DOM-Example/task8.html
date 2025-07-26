@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit hardik. Accusantium, nobis quod! Dolorum aspernatur assumenda iusto ducimus, ad quos debitis hardik. Delectus, voluptatem distinctio! Voluptatum ut dolore sint alias maxime odit ipsam molestiae, tempore culpa! Vel laborum optio commodi quo repellendus hardik. Dolorum eaque aliquam placeat, sunt eius iusto ipsam hardik deleniti sit vitae eligendi alias enim tempore. Nobis, neque atque? Porro delectus fuga corrupti eaque quis voluptatem hardik, rem perspiciatis! Deleniti, dolorem? Eum cum eligendi error, impedit explicabo qui, in architecto numquam vero sed natus aliquid vel beatae hardik minus vitae doloremque mollitia itaque soluta. Necessitatibus nobis tempora quam ipsum quod obcaecati similique hardik modi debitis. </p>
+
+        <script>
+
+ // Change the text color of all paragraphs whose text includes the word
+
+  
+ let para = document.querySelectorAll("p"); 
+
+// para.forEach(p => { 
+//     p.innerHTML = p.innerHTML.replaceAll("hardik", '<span style="color:blue;"> hardik</span>');
+
+// }); 
+
+// for (let i = 0; i < para.length; i++) {
+//     para[i].innerHTML = para[i].innerHTML.replaceAll("hardik", '<span style="color:blue;">hardik</span>');
+// }
+
+
+ for (let i = 0; i < para.length; i++) {
+  let text = para[i].innerHTML;
+  para[i].innerHTML = text.split("hardik").join('<span style="color:blue;">hardik</span>');
+  console.log(text.split("hardik"))
+console.log( para[i].innerHTML );
+
+ 
+}
+
+
+        </script>
+       
+</body>
+</html>

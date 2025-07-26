@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Fibonacci sequence (0 1 1 2 3 5 8 ...)
+        let usernumber = parseInt(prompt("Enter your number:"));
+
+        let num1 = 0;
+        let num2 = 1;
+       
+
+        for (let i = 0; num1 <= usernumber; i++) {
+            console.log(num1);
+            let sum = num1 + num2;
+            num1 = num2;
+            num2 = sum;
+            
+
+             if (num1 === usernumber) {
+                console.log("Right number");
+                break;
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

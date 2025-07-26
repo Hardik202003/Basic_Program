@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="demo2.css">
+</head>
+
+<body>
+    <div class="main container">
+
+        <!--Header-->
+        <div
+            class="header d-flex  w-100 h-60 shadow-sm d-flex align-items-center position-fixed top-0 start-0 bg-white z-3">
+            <div class="abc"><i class="fas ms-lg-5 fa-bars fa-lg abc"></i></div>
+            <div class="sidebar-header d-flex text-nowrap">
+                <img src="" alt="logo">
+                <h3><b>Quick POS</b></h3>
+            </div>
+
+            <div class="d-flex button  ">
+                <div> <button class="btn btn-sm abc ">+</button> </div>
+                <div><button class="btn btn-sm m-3">POS</button> </div>
+                <div class="dropdown ">Store/Location
+                    <div class="col-md-12 ">
+                        <select class="form-select ">
+                            <option>Ahmedabad</option>
+                            <option>Mumbai</option>
+                            <option>Delhi</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="xyz d-flex 	">
+                <div><button class="btn btn-sm text-light ms-5 bg-success text-nowrap">Buy now($49)</button> </div>
+                <div class="profile">
+                    <div> <i class="fas fa-expand fa-lg"></i></div>
+                    <div><img src="https://flagcdn.com/us.svg" width="24" alt="USA Flag"></div>
+
+                    <div id="notification"> <i class="fa-solid fa-bell fa-lg position-relative">
+                            <span class="notification-badge">0</span>
+                        </i> </div>
+                    <div><i class="fa-solid fa-user"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!--Navbar-->
+
+        <div id="navbar" class="d-sm-none d-lg-block">
+            <ul class=" list-unstyled components ">
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fa-solid fa-tv"></i> Dashboard</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fa-solid fa-bars"></i> Product</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-file-archive me-2"></i>Supplier</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fa-solid fa-folder"></i> Customer</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-search"></i> Purchase Request</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-file-alt"></i> Purchase</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fa-solid fa-magnifying-glass"></i> Purchase Return</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-upload"></i> Quotation</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fa-regular fa-file"></i>Sales</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-tasks"></i>Sales Return</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-tasks"></i> Damage Stock</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-bell"></i> Stock Transfer</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-history"></i> Inventory</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-clock"></i> Expense</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-archive"></i> Reports</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-check-circle"></i> inquiry</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-users"></i> Reminder</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-user-tag"></i> Roles</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-users"></i> Users</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-user-cog"></i> Email</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-cog"></i> Settings</a>
+                </li>
+                <li>
+                    <a href="#" class="d-block py-2 text-dark"><i class="fas fa-clipboard-list"></i> Logs</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--Main-content-->
+        <div class="container border">
+            <h4 class="mb-2">Manage Products❔</h4>
+            <div class="form-section">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label form-label-required text-danger">Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label form-label-required text-danger">Brand</label>
+                        <div class="select-with-button" role="group">
+                            <select class="form-select">
+                                <option>Brand</option>
+                            </select>
+                            <button class="btn btn-plus ">+</button>
+                        </div>
+                        <small class="text-danger">Brand is required.</small>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label form-label-required text-danger">Category</label>
+                        <div class="select-with-button">
+                            <select class="form-select">
+                                <option>Select Category</option>
+                            </select>
+                            <button class="btn btn-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label form-label-required text-danger">Base Unit</label>
+                        <div class="select-with-button">
+                            <select class="form-select">
+                                <option>Select Unit</option>
+                            </select>
+                            <button class="btn btn-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Tax</label>
+                        <select class="form-select">
+                            <option>Tax</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">SKU Code</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">SKU Name</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Barcode Number</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Alert Quantity</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">MRP</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Purchase Price</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="col-md-2">
+                        <label class="form-label">Margin (%)</label>
+                        <input type="number" class="form-control">
+                    </div>
+                    <div class="form-check col-1 m-5">
+                        <input type="checkbox" class="form-check-input" id="inlineFormCheck">
+                        <label for="inlineFormCheck" class="form-check-label">Inc.Tax</label>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Sales Price</label>
+                        <input type="number" class="form-control">
+                    </div>
+
+
+
+
+                    <div class="col-md-8">
+                        <label class="form-label">Description</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Product Image</label>
+                        <div class="d-flex align-items-center gap-3">
+                            <div
+                                style="width: 60px; height: 60px; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center;">
+                                📷
+                            </div>
+                            <button class="btn btn-success">Add</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12 flex-start">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="multipleVariants">
+                            <label for="multipleVariants" class="form-check-label">This product has multiple
+                                variants</label>
+                        </div>
+
+                        <div class="d-flex gap-2 mt-5">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                <i class="fa-regular fa-floppy-disk  px-2 "></i>Save</button>
+                            <button type="reset" class="btn btn-danger">⛒ Cancel</button>
+                        </div>
+
+
+
+                    </div>
+                </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //create an array of student and then create a function that returns Student Info by id.
+
+        let students = [
+            { id: 1, name: "hardik", age: 21, address: "panvi", study: "BE", salary: 10000 },
+            { id: 2, name: "Mit", age: 21, address: "panvi", study: "BE", salary: 20000 },
+            { id: 3, name: "Maulik", age: 21, address: "panvi", study: "BE", salary: 15000 },
+            { id: 4, name: "Shubham", age: 21, address: "panvi", study: "BE", salary: 16000 },
+            { id: 5, name: "Nikul", age: 21, address: "panvi", study: "BE", salary: 8000 },
+            { id: 6, name: " Pankaj", age: 21, address: "panvi", study: "BE", salary: 5000 }
+        ];
+
+        function getId(id) {
+            let student = students.find(s => s.id === id);
+            return student;
+        }
+
+        console.log(getId(2));
+        console.log(getId(5));
+
+    </script>
+</body>
+
+</html>

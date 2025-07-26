@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function randomnum(){
+            let num = Math.floor(Math.random() * 6) + 1;
+            console.log(num)
+        }
+
+        randomnum();
+
+
+
+        function empinfo (name, age){
+            console.log(name,age);
+        }
+
+        empinfo("hardik", 22)
+
+//  AVG OF NUM
+        function avgnum(num1, num2, num3){
+            console.log((num1 + num2 + num3) / 3);
+        }
+
+        avgnum(1, 2, 3);
+
+    // MULTIPLICATION TABLE
+
+    function table(){
+        let n = parseInt(prompt("Enter the number :"));
+        for (i = n ; i <= n*10; i = i + n){
+         console.log(i);
+        }
+    }
+
+    table();
+
+
+   
+    </script>
+</body>
+</html>

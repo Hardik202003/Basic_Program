@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // find maximum in array
+
+        let arr = [2, 4, 24, 76, 13, 43, 55, 34, 67];
+
+        let max = arr.reduce((res, el) => {
+            if (res < el) {
+                return el;
+            } else {
+                return res;
+            }
+        });
+
+        console.log(max);
+
+        // check number in our array are multiple of 10 or not
+
+        let num = [2, 4, 20, 24, 76, 100, 13, 50, 43, , 70, 55, 34, 67, 90];
+
+        let mul = num.filter(el => {
+            return el % 10 == 0
+        });
+
+        console.log(mul);
+
+        // find minimum number in array
+
+        // find maximum in array
+
+        let arr1 = [29, 41, 24, 76, 13, 43, 55, 34, 67];
+
+        let min = arr1.reduce((res, el) => {
+            if (res < el) {
+                return res;
+            } else {
+                return el;
+            }
+        });
+        console.log(min);
+
+
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let str = "hello word";
+    let vowelCount = 0;
+    const vowels = "aeiouAEIOU";
+    let notvowelCount = 0;
+    for (let i = 0; i < str.length; i++) {
+      if (vowels.includes(str[i])) {
+        vowelCount++;
+        console.log(`Found vowel: ${str[i]}`);
+      } else {
+        notvowelCount++;
+      }
+    }
+
+    console.log(`Total vowels: ${vowelCount}`);
+
+    console.log(`Total not a vowels: ${notvowelCount} `);
+  </script>
+</body>
+
+</html>

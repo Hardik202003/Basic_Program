@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+// Creating and Appending Elements Dynamically create new elements and append them to the DOM.
+  
+let para = document.createElement("p");
+para.innerText = "hey, how are you?";
+document.querySelector("body").prepend(para);
+
+ 
+let para2 = document.createElement("h3");
+para2.innerText = "I am heading";
+document.querySelector("body").prepend(para2);
+
+let div = document.createElement("div");
+let h1 = document.createElement("h1");
+let para3 = document.createElement("p");
+
+h1.innerText = "i'm in div";
+para3.innerText = "i'm in also div paragraph";
+
+div.prepend(h1);
+div.prepend(para3);
+
+document.querySelector("body").prepend(div);
+
+// Removing Elements Remove an existing element from the DOM.
+
+let del = div.querySelector("h1");
+del.remove();
+console.log(del);
+
+    </script>
+</body>
+</html>

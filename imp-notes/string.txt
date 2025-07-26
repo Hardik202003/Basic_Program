@@ -1,0 +1,172 @@
+1. length
+Description: Returns the length of a string.
+let str = "Hello";
+console.log(str.length); // Output: 5
+
+
+2. toUpperCase()
+Description: Converts all characters in a string to uppercase.
+let str = "hello";
+console.log(str.toUpperCase()); // Output: "HELLO"
+
+
+3. toLowerCase()
+Description: Converts all characters in a string to lowercase.
+let str = "HELLO";
+console.log(str.toLowerCase()); // Output: "hello"
+
+
+4. includes()
+Description: Checks if a string contains a specified value.
+let str = "JavaScript";
+console.log(str.includes("Script")); // Output: true
+
+
+5. indexOf()
+Description: Returns the first index of a specified value, or -1 if not found.
+let str = "hello world";
+console.log(str.indexOf("world")); // Output: 6
+
+
+6. slice(start, end)
+Description: Extracts part of a string and returns it.
+let str = "JavaScript";
+console.log(str.slice(0, 4)); // Output: "Java"
+
+
+7. replace()
+Description: Replaces a substring with another string.
+let str = "I like apples";
+console.log(str.replace("apples", "oranges")); // Output: "I like oranges"
+
+
+8. trim()
+Description: Removes whitespace from both ends of a string.
+let str = "  hello  ";
+console.log(str.trim()); // Output: "hello"
+
+
+9. split()
+Description: Splits a string into an array of substrings.
+let str = "a,b,c";
+console.log(str.split(",")); // Output: ["a", "b", "c"]
+
+
+10. charAt(index)
+Description: Returns the character at the specified index.
+let str = "Hello";
+console.log(str.charAt(1)); // Output: "e"
+
+11. startsWith()
+Description: Checks if a string starts with a specified value.
+let str = "JavaScript";
+console.log(str.startsWith("Java")); // Output: true
+
+
+12. endsWith()
+Description: Checks if a string ends with a specified value.
+let str = "hello.txt";
+console.log(str.endsWith(".txt")); // Output: true
+
+
+13. repeat(count)
+Description: Repeats a string a specified number of times.
+let str = "ha";
+console.log(str.repeat(3)); // Output: "hahaha"
+
+
+14. substring(start, end)
+Description: Extracts characters between two indices.
+let str = "JavaScript";
+console.log(str.substring(4, 10)); // Output: "Script"
+
+
+15. padStart(length, padString)
+Description: Pads the start of a string with another string until it reaches a certain length.
+let str = "5";
+console.log(str.padStart(3, "0")); // Output: "005"
+
+
+16. padEnd(length, padString)
+Description: Pads the end of a string with another string until it reaches a certain length.
+let str = "5";
+console.log(str.padEnd(3, "0")); // Output: "500"
+
+
+17. match()
+Description: Retrieves the result of a string match against a regex.
+let str = "hello 123";
+console.log(str.match(/\d+/)); // Output: ["123"]
+
+
+18. search()    
+Description: Searches a string for a regex match and returns the index of the first match.
+let str = "hello world";
+console.log(str.search("world")); // Output: 6
+
+
+19. localeCompare()
+Description: Compares two strings in the current locale.
+let str1 = "apple";
+let str2 = "banana";
+console.log(str1.localeCompare(str2)); // Output: -1 (because "apple" comes before "banana")
+
+
+20. concat()
+Description: Joins two or more strings.
+let str1 = "Hello, ";
+let str2 = "world!";
+console.log(str1.concat(str2)); // Output: "Hello, world!"
+
+
+
+
+
+
+
+
+
+
+
+const students = [
+  { firstName: "adam", lastName: "ford" },
+  { firstName: "alex", lastName: "david" },
+  { firstName: "aaron", lastName: "reed" },
+  { firstName: "arthur", lastName: "richard" },
+  { firstName: "andrew", lastName: "field" },
+  { firstName: "ahmed", lastName: "jones" },
+  { firstName: "alan", lastName: "mcdonald" }
+];
+
+const result = students.filter(student => {
+  const firstName = student.firstName.toLowerCase();
+  const lastName = student.lastName.toLowerCase();
+
+  const startsWithA = firstName.startsWith("a");
+  const endsWithD = lastName.endsWith("d");
+  const firstContainsH = firstName.includes("h");
+  const lastContainsD = lastName.includes("d");
+
+  return startsWithA && endsWithD && (firstContainsH || lastContainsD);
+});
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+const allSubjects = [...new Set(students.flatMap(student => student.subjects))];
+
+
+
+
+
+const csvRows = students.map(student => ${student.id}, ${student.firstName} ${student.lastName}, ${student.age});
+csvRows.unshift("ID, Full Name, Age");  

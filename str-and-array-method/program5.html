@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Remove Duplicates from an Array : let arr = [1, 2, 2, 3, 4, 4, 5];
+
+        
+        let arr = [1, 2, 2, 3, 4, 4, 5];
+        let value = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            if (!value.includes(arr[i])) {
+                value.push(arr[i]);
+            }
+        }
+
+        console.log(value); 
+
+    </script>
+</body>
+
+</html>

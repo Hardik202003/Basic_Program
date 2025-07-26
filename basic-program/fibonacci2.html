@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let usernumber = parseInt(prompt("Enter the number :"))
+        let num1 = 0; 
+        let num2 = 1;
+        let series = false;
+
+        for (let i = 0; i <= usernumber; i++) {
+            console.log(num1);
+            let sum = num1 + num2;
+            num1 = num2;
+            num2 = sum;
+
+            if (num1 === usernumber) {
+                series = true;
+                break;
+            }   
+            
+        }
+
+        if (series) {
+            console.log("Number is in the series.");
+        } else {
+            console.log("Number is NOT in the series.");
+        }
+
+    </script>
+
+</body>
+
+</html>
